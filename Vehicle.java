@@ -55,10 +55,11 @@ public class Vehicle {
      */
     public void status() {
         System.out.println(
-            String.format("%s\n%s\n%s",
+            String.format("%s\n%s\n%s\n%s",
                 "       --> Speed: " + String.valueOf(this.speed),
                 "       --> MaxSpeed: " + String.valueOf(this.maxSpeed),
-                "       --> Color: " + this.colour)
+                "       --> Color: " + this.colour,
+                "       --> Number of tires: " + String.valueOf(this.numTires))
         );
     }
 
@@ -76,7 +77,7 @@ public class Vehicle {
      *
      * @param color - the colour
      */
-    public void setColor(String color) {
+    private void setColor(String color) {
         this.colour = color;
     }
 
@@ -94,7 +95,7 @@ public class Vehicle {
      *
      * @param speed - the speed of the vehicle.
      */
-    public void setSpeed(int speed) {
+    protected void setSpeed(int speed) {
         this.speed = speed;
     }
 

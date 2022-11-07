@@ -37,14 +37,8 @@ public class Bicycle extends Vehicle {
      * </p>
      */
     public void status() {
-        System.out.println(
-            String.format("%s\n%s\n%s\n%s\n%s",
-                "       --> Speed: " + String.valueOf(super.getSpeed()),
-                "       --> MaxSpeed: " + String.valueOf(super.getMaxSpeed()),
-                "       --> Color: " + super.getColor(),
-                "       --> Cadence: " + this.cadence,
-                "       --> Number of tires: " + super.getTires())
-        );
+        super.status();
+        System.out.println("       --> Cadence: " + this.cadence);
     }
 
     /**
